@@ -15,7 +15,7 @@ INSERT INTO internships values
 SELECT * FROM internships
 
   /*
-  Text is the name of the company
+  Text is the name of the company 
   starting is the starting date
   meet_requirements is if I would meet the requirements to apply
   how much days you would work a week
