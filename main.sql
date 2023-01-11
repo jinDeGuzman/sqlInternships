@@ -5,17 +5,18 @@ CREATE TABLE internships
   startring DATE,
   workdays_a_week INTEGER,
   does_pay BOOLEAN,
-  meet_requirements BOOLEAN
+  meet_requirements BOOLEAN,
+  url TEXT
 );
 
 INSERT INTO internships values
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false),
-('Testing', '000-000-000', 0000, 0, false, false);
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.'),
+('Testing', '000-000-000', 0000, 0, false, false, 'www.');
   
 .print
 SELECT * FROM internships;
@@ -23,10 +24,9 @@ SELECT * FROM internships;
 .print
 .print 'average number of workdays a week ' + k;
 SELECT avg(workdays_a_week) AS avg_workdays_a_week FROM internships;
-.print
 
 
-  
+
   /*
   Text is the name of the company 
   starting is the starting date
